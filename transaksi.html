@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Transaksi</title>
+    <link rel="stylesheet" href="styletransaksi.css">
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <img src="logo.jpg" width="80" height="80" alt="Logo JasaWebPro">
+                <h1>JasaWeb</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" title="Kembali ke Beranda">Beranda</a></li>
+                    <li><a href="transaksi.html" title="Cek transaksi dan pemesanan">Transaksi</a></li>
+                    <li><a href="testimoni.html" title="Lihat testimoni pelanggan">Testimoni</a></li>
+                    <li><a href="kontak.html" title="Hubungi kami">Kontak</a></li>
+                    <li><a href="faq.html" title="FAQ">FAQ</a></li>
+                    <li><a href="tentangkami.html" title="Tentang Kami">Tentang Kami</a></li>
+                    <li><a href="portofolio.html" title="Portofolio">Portofolio</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="transaction">
+      
+            <form action="#" method="post">
+                <fieldset>
+                    <center><h2>Daftar Paket Jasa</h2></center>
+                    <table border="1" style="width: 100%;">
+                        <thead style="background-color: #007bff; align-items: center;">
+                            <tr>
+                                <th>Paket</th>
+                                <th>Fitur</th>
+                                <th>Harga</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Website Toko Online</td>
+                                <td>Produk, Keranjang, Checkout</td>
+                                <td>Rp 3.000.000</td>
+                            </tr>
+                            <tr>
+                                <td>Website Perusahaan</td>
+                                <td>Profil, Layanan, Kontak</td>
+                                <td>Rp 2.500.000</td>
+                            </tr>
+                            <tr>
+                                <td>Website Portofolio</td>
+                                <td>Galeri, Tentang Saya</td>
+                                <td>Rp 1.500.000</td>
+                            </tr>
+                            <tr>
+                                <td>Landing Page</td>
+                                <td>1 Halaman, CTA</td>
+                                <td>Rp 1.000.000</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+            </form>
+            </section>
+
+
+
+
+
+        <section class="transaction">
+            <h2>Formulir Transaksi</h2>
+            <form action="#" method="post">
+                <fieldset >
+                    <legend>Informasi Pribadi</legend>
+                
+                    <label for="nama">Nama:</label>
+                    <input type="text" id="nama" name="nama" placeholder="masukkan nama" required>
+                
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="@contoh.com" required>
+
+                    <label for="nomor">Nomor HP:</label>
+                    <input type="number" id="nomor" name="nomor" placeholder="08123456789" required>
+
+                    <label for="tanggal">Tanggal Transaksi:</label>
+                    <input type="date" id="tanggal" name="tanggal" required>
+                </fieldset>
+                
+                <label for="paket">Pilih Paket:</label>
+                    <input list="paket-list" id="paket" name="paket" placeholder="Pilih Paket">
+                    <datalist id="paket-list">
+                     <option value="Website Toko Online">
+                     <option value="Website Perusahaan">
+                     <option value="Website Portofolio">
+                     <option value="Landing Page">
+                    </datalist>
+                
+                <label for="metode">Metode Pembayaran:</label>
+                <select id="metode" name="metode" required>
+                    <option value="transfer">Transfer Bank</option>
+                    <option value="ewallet">E-Wallet</option>
+                    <option value="cod">Cash on Delivery</option>
+                </select>
+                
+                <button type="submit" class="button">Konfirmasi Transaksi</button>
+            </form>
+            
+
+
+
+
+        </section>
+
+        
+    </main>
+</body>
+</html>
